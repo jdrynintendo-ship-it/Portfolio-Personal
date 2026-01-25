@@ -1,0 +1,580 @@
+/* Resetear a medidas pro default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: whitesmoke;
+    background-color: #333333;
+}
+
+/* Tipografía general */
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    line-height: 1.2px;
+    margin-bottom: 16px;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 48px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 32px;
+}
+
+h4 {
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Enlaces */
+a {
+    color: cyan;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #1e40af;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+}
+
+/* Header */
+.header {
+    background-color: rgb(22, 152, 195);
+    border-bottom: 1px solid blue;
+    padding: 24px 0;
+}
+
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__brand {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header__name {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 15px;
+}
+
+.header__tagline {
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    font-size: 14px;
+}
+
+/* Navegación */
+.nav {
+    text-align: center;
+}
+
+.nav__list {
+    display: inline-block;
+}
+
+.nav__item {
+    display: inline-block;
+    text-shadow: 1px 1px 2px black;
+    margin: 0 16px;
+}
+
+.nav__link {
+    padding: 8px 12px;
+    display: inline-block;
+    color: rgb(130, 255, 240);
+    font-weight: 500;
+}
+
+.nav__link:hover {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.nav__link--active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Main content */
+.main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 64px 0;
+    text-align: center;
+    background-color: rgb(97, 102, 197);
+    margin-bottom: 48px;
+}
+
+.hero__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero__title {
+    font-size: 48px;
+    color: whitesmoke;
+    margin-bottom: 16px;
+}
+
+.hero__subtitle {
+    font-size: 24px;
+    color: whitesmoke;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.hero__description {
+    font-size: 18px;
+    color: whitesmoke;
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero__actions {
+    margin-bottom: 48px;
+}
+
+.hero__stats {
+    text-align: center;
+}
+
+.stat {
+    display: inline-block;
+    margin: 0 32px;
+    text-align: center;
+}
+
+.stat__number {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: lightblue;
+    margin-bottom: 6px;
+}
+
+.stat__label {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button--primary {
+    background-color: rgb(43, 43, 255);
+    color: cyan;
+    border-color: #2563eb;
+}
+
+.button--primary:hover {
+    background-color:blue;
+    color: lightcyan;
+    border-color: #2563eb;
+}
+
+.button--secondary {
+    background-color: lightblue;
+    color: blue;
+    border-color: #2563eb;
+}
+
+.button--secondary:hover {
+    background-color: rgb(125, 201, 226);
+    color: blue;
+    border-color: #2563eb;
+}
+
+/* Sección About */
+.about {
+    padding: 48px 0;
+}
+
+.about__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__title {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 32px;
+}
+
+.about__intro {
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 24px;
+}
+
+.about__text {
+    color: whitesmoke;
+    margin-bottom: 32px;
+}
+
+/* Valores */
+.values {
+    margin-top: 48px;
+}
+
+.values__title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.values__item {
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #3d3d3d;
+    border: 5px solid #535353;
+}
+
+.values__item:hover {
+    background-color: #7b7d80;
+    border-color: #2563eb;
+}
+
+.values__icon {
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.values__item strong {
+    margin-right: 8px;
+}
+
+.values_item span {
+    color: #666666;
+}
+
+/* Sección de proyectos */
+.projects {
+    padding: 64px 0;
+    background-color: #333333;
+}
+
+.projects__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects__title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.projects__description {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects__grid {
+    padding: 0 20px;
+}
+
+/* Tarjeta de proyecto */
+.project {
+    background-color: #333333;
+    padding: 32px;
+    margin-bottom: 32px;
+    border: 3px solid #535353;
+}
+
+.project:hover {
+    border-color: #2563eb;
+}
+
+.project--featured {
+    border: 5px solid #2563eb;
+    position: relative;
+}
+
+.project__badge {
+    background-color: #2563eb;
+    color: whitesmoke;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.project__title {
+    color: whitesmoke;
+    margin-bottom: 16px;
+}
+
+.project__description {
+    color: whitesmoke;
+    margin-bottom: 24px;
+}
+
+.project__subtitle {
+    font-size: 16px;
+    color: whitesmoke;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.project__learnings {
+    list-style: disc;
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+
+.project__learnings li{
+    color: whitesmoke;
+    margin-bottom: 8px;
+}
+
+.project__technologies {
+    color: blue;
+    margin-bottom: 8px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: rgb(125, 201, 226);
+    color: #0369a1;
+    padding: 4px 12px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project__links {
+    text-align: left;
+}
+
+.project__link {
+    display: inline-block;
+    margin-right: 16px;
+    font-weight: 600;
+}
+
+/* Sección de Habilidades */
+.skills {
+    padding: 64px 0;
+}
+
+.skills__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills__title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.skills__subtitle {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 32px;
+}
+
+.skills_list {
+    margin-bottom: 48px;
+}
+
+.skill {
+    margin-bottom: 32px;
+}
+
+.skill__name {
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+
+.skill__bar {
+    background-color: gray;
+    height: 24px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.skill__progress {
+    background-color: green;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill__progress--html {
+    width: 75%;
+}
+
+.skill__progress--css {
+    width: 60%;
+}
+
+.skill__progress--js {
+    width: 20%;
+}
+
+.skill__progress--sql {
+    width: 50%;
+}
+
+.skill__progress--java {
+    width: 60%;
+}
+
+.skill__progress--ml {
+    width: 30%;
+}
+
+.skill_percentage {
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+/* Sección de contacto */
+.contact {
+    padding: 64px 0;
+    background-color: #333333;
+}
+
+.contact__container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact__title {
+    margin-bottom: 16px;
+}
+
+.contact__description {
+    color: whitesmoke;
+    margin-bottom: 48px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__methods {
+    margin-bottom: 48px;
+}
+
+.contact__method {
+    display: inline-block;
+    margin: 0 32px 32px;
+    text-align: center;
+}
+
+.contact__method-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: whitesmoke;
+}
+
+.contact__link {
+    color: cyan;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(22, 152, 195);
+    color: white;
+    padding: 48px 0;
+    text-align: center;
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer__nav {
+    margin-bottom: 24px;
+}
+
+.footer__link {
+    color: white;
+    margin: 0 16px;
+    display: inline-block;
+}
+
+.footer__link:hover {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.footer__copyrigth {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.footer__credits {
+    color: white;
+    font-size: 14px;
+}
